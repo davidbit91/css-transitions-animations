@@ -17,6 +17,8 @@ body{
   background-color: gray;
   margin-left: 198px;
   margin-top: 20px;
+  animation: segundos 2s linear 0s normal;
+  -webkit-animation: segundos 2s linear 0s normal;
 }
 
 #minutes {
@@ -33,6 +35,14 @@ body{
   background-color: black;
   margin-left: 196px;
   margin-top: 80px;
- 
 }
 
+@keyframes segundos{
+  100% {
+    transform: rotateZ(360deg) translateY(200px);
+    -webkit-transform: rotateZ(360deg) translateY(200px);
+    -moz-transform: rotateZ(360deg) translateY(200px);
+    -ms-transform: rotateZ(360deg) translateY(200px);
+    -o-transform: rotateZ(360deg) translateY(200px);
+}
+}
